@@ -1,0 +1,143 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+	color: #000;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+img {
+	width: 100%;
+}
+/* category  */
+header {
+	height: 100px;
+	width: 100vw;
+	border-bottom: 2px solid #dddd;
+	text-align: center;
+}
+
+.admin-content {
+	padding-top: 50px;
+	display: flex;
+}
+
+.admin-content-left {
+	background-color: #ddd;
+	width: 20%;
+	padding: 30px;
+}
+
+.admin-content-left > ul > li > a {
+	font-weight: bold;
+}
+
+.admin-content-left ul li {
+	margin: 5px 0;
+}
+
+.admin-content-left ul ul {
+	margin-left: 20px;
+}
+
+.admin-content-right {
+	width: 80%;
+	padding: 30px;
+}
+
+/* category, brand - add, edit  */
+
+.admin-content-right-category_add, 
+.admin-content-right-category_edit,
+.admin-content-right-brand_add,
+.admin-content-right-brand_edit
+ input {
+	padding: 5px;
+	margin: 10px 0;
+	width: 200px;
+}
+
+.admin-content-right-category_add,
+.admin-content-right-category_edit,
+.admin-content-right-brand_add,
+.admin-content-right-brand_edit
+ button {
+	display: block;
+	width: 100px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.admin-content-right-brand_add,
+.admin-content-right-brand_edit
+ select {
+	height: 30px;
+	width: 200px;
+	margin-top: 10px;
+ }
+
+/* category, brand list  */
+
+.admin-content-right-category_list,
+.admin-content-right-brand_list 
+ table {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.admin-content-right-category_list,
+.admin-content-right-brand_list
+ table tr th,td {
+	border: 1px solid #55555555;
+}
+
+/* product add  */
+.admin-content-right-product_add h1 {
+	margin-bottom: 20px;
+}
+
+.admin-content-right-product_add input, select {
+	width: 200px;
+	height: 30px;
+	display: block;
+	margin: 6px 0 20px;
+}
+
+.admin-content-right-product_add textarea {
+	display: block;
+	height: 200px;
+	width: 500px;
+	margin: 6px 0 20px;
+}
+
+.admin-content-right-product_add button {
+	display: block;
+	width: 100px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+/* product list  */
+.admin-content-right-product_list table{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	
+}
+
+.admin-content-right-product_list table th, td {
+	border: 1px solid #55555555;
+}
