@@ -360,6 +360,7 @@ header {
 	.header-menu-toggle {
 		display: inline-block;
 		width: 70px;
+		height: 70px;
 	}
 
 	.header-menu-toggle > i {
@@ -367,6 +368,12 @@ header {
 		font-size: 23px;
 		padding: 20px;
 	}
+	/* .header-menu-toggle > span {
+		display: block;
+		width: 100%;
+		height: 20px;
+		color: var(--primary-color);
+	} */
 
 	.header-menu {
 		/* display: none; */

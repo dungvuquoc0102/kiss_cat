@@ -36,20 +36,14 @@ $(".banner-list").slick({
 const toggle = document.querySelector(".header-menu-toggle");
 const menu = document.querySelector(".header-menu");
 const activeClass = "is-show";
-toggle.addEventListener("click", () => {
-    // alert("1");
+toggle.addEventListener("click", function () {
     menu.classList.add(activeClass);
 });
-
-// window.addEventListener("click", (e) => {
-//     console.log(e);
-//     console.log(!e.target.matches(".header-menu-toggle"));
-//     console.log(!menu.contains(e.target));
-//     if (!menu.contains(e.target) && !e.target.matches(".header-menu-toggle")) {
-//         alert("2");
-//         menu.classList.remove(activeClass);
-//     }
-// });
+window.addEventListener("click", function (e) {
+    if (!menu.contains(e.target) && !e.target.matches(".header-menu-toggle")) {
+        menu.classList.remove(activeClass);
+    }
+});
 
 // product
 
@@ -72,32 +66,32 @@ $(".product-img-list").slick({
     arrows: false
 });
 
-const toggleMain = document.querySelector(".description-main");
-const toggleMore = document.querySelector(".description-more");
-const descMainDetail = document.querySelector(".description-main-detail");
-const descMoreDetail = document.querySelector(".description-more-detail");
-const showDescDetail = "show-desc-detail";
-const removeDescDetail = "remove-desc-detail";
+// const toggleMain = document.querySelector(".description-main");
+// const toggleMore = document.querySelector(".description-more");
+// const descMainDetail = document.querySelector(".description-main-detail");
+// const descMoreDetail = document.querySelector(".description-more-detail");
+// const showDescDetail = "show-desc-detail";
+// const removeDescDetail = "remove-desc-detail";
 
-descMainDetail.classList.remove(removeDescDetail);
-descMainDetail.classList.add(showDescDetail);
+// descMainDetail.classList.remove(removeDescDetail);
+// descMainDetail.classList.add(showDescDetail);
 
-descMoreDetail.classList.remove(showDescDetail);
-descMoreDetail.classList.add(removeDescDetail);
+// descMoreDetail.classList.remove(showDescDetail);
+// descMoreDetail.classList.add(removeDescDetail);
 
-toggleMain.addEventListener("click", () => {
-    // alert("1");
-    descMainDetail.classList.remove(removeDescDetail);
-    descMainDetail.classList.add(showDescDetail);
+// toggleMain.addEventListener("click", () => {
+//     // alert("1");
+//     descMainDetail.classList.remove(removeDescDetail);
+//     descMainDetail.classList.add(showDescDetail);
 
-    descMoreDetail.classList.remove(showDescDetail);
-    descMoreDetail.classList.add(removeDescDetail);
-});
-toggleMore.addEventListener("click", () => {
-    // alert("1");
-    descMainDetail.classList.remove(showDescDetail);
-    descMainDetail.classList.add(removeDescDetail);
+//     descMoreDetail.classList.remove(showDescDetail);
+//     descMoreDetail.classList.add(removeDescDetail);
+// });
+// toggleMore.addEventListener("click", () => {
+//     // alert("1");
+//     descMainDetail.classList.remove(showDescDetail);
+//     descMainDetail.classList.add(removeDescDetail);
 
-    descMoreDetail.classList.remove(removeDescDetail);
-    descMoreDetail.classList.add(showDescDetail);
-});
+//     descMoreDetail.classList.remove(removeDescDetail);
+//     descMoreDetail.classList.add(showDescDetail);
+// });
