@@ -36,11 +36,11 @@ $(".banner-list").slick({
 const toggle = document.querySelector(".header-menu-toggle");
 const menu = document.querySelector(".header-menu");
 const activeClass = "is-show";
-toggle.addEventListener("click", function () {
+toggle.addEventListener("click", () => {
     menu.classList.add(activeClass);
 });
-window.addEventListener("click", function (e) {
-    if (!menu.contains(e.target) && !e.target.matches(".header-menu-toggle")) {
+window.addEventListener("click", (e) => {
+    if (!menu.contains(e.target) && !e.target.matches(".fas.fa-bars.icon-menu")) {
         menu.classList.remove(activeClass);
     }
 });
