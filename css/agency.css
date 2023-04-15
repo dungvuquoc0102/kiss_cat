@@ -139,6 +139,7 @@
     font-size: 15px;
     outline: none;
     background-color: rgba(0, 0, 0, 0.03);
+    font-family: var(--font-family);
 }
 
 /* photoAgency  */

@@ -163,6 +163,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 .header-menu-toggle {
@@ -242,7 +243,7 @@ ul.header-sub-sub-menu > li > a {
 }
 
 .header-search-button > i {
-    padding: 35px 20px 35px 35px;
+    padding: 35px 0px 35px 35px;
     color: var(--primary-color);
     line-height: 1.5;
 }
@@ -365,7 +366,7 @@ ul.header-sub-sub-menu > li > a {
     .header-menu-toggle > i {
         color: var(--primary-color);
         font-size: 23px;
-        padding: 20px;
+        padding: 20px 20px 20px 0px;
     }
     /* .header-menu-toggle > span {
 		display: block;
@@ -381,7 +382,7 @@ ul.header-sub-sub-menu > li > a {
         top: 0;
         bottom: 0;
         left: 0;
-        z-index: 99;
+        z-index: 200;
         box-shadow: 0 0 20px 0 #00000088;
         background-color: #fff;
     }
