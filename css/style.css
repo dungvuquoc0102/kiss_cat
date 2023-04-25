@@ -6,7 +6,8 @@
 
 :root {
     --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    --primary-color: #1b4ea2;
+    /* --primary-color: #1b4ea2; */
+    --primary-color: #d70018;
     --primary-font-size: 15px;
 }
 
@@ -290,7 +291,8 @@ ul.header-sub-sub-menu > li > a {
 
 /* footer  */
 .footer {
-    background-color: #1f2936;
+    background-color: #f8f8f8;
+    color: #4a4a4a;
 }
 
 .footer-container {
@@ -313,7 +315,7 @@ ul.header-sub-sub-menu > li > a {
 }
 
 .contact-item {
-    color: #fff;
+    color: #4a4a4a;
     margin-right: 20px;
     font-size: 12px;
     font-weight: 700;
@@ -323,7 +325,7 @@ ul.header-sub-sub-menu > li > a {
 }
 
 .footer-social > .social-item {
-    color: #fff;
+    color: #4a4a4a;
     margin-right: 10px;
 }
 
@@ -344,14 +346,14 @@ ul.header-sub-sub-menu > li > a {
 }
 
 .footer-item > a {
-    color: #fff;
+    color: #4a4a4a;
     display: inline-block;
     padding-left: 20px;
     text-align: left;
 }
 
 .footer-arrow-icon {
-    color: #7a9c59;
+    color: var(--primary-color);
     font-size: 12px;
 }
 

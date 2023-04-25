@@ -71,26 +71,34 @@ const toggleMain = document.querySelector(".description-main");
 const toggleMore = document.querySelector(".description-more");
 const descMainDetail = document.querySelector(".description-main-detail");
 const descMoreDetail = document.querySelector(".description-more-detail");
-const showDescDetail = "show-desc-detail";
-const removeDescDetail = "remove-desc-detail";
-
-descMainDetail.classList.remove(removeDescDetail);
-descMainDetail.classList.add(showDescDetail);
-
-descMoreDetail.classList.remove(showDescDetail);
-descMoreDetail.classList.add(removeDescDetail);
 
 toggleMain.addEventListener("click", () => {
-    descMainDetail.classList.remove(removeDescDetail);
-    descMainDetail.classList.add(showDescDetail);
-
-    descMoreDetail.classList.remove(showDescDetail);
-    descMoreDetail.classList.add(removeDescDetail);
+    descMainDetail.style.display = "block";
+    descMoreDetail.style.display = "none";
 });
-toggleMore.addEventListener("click", () => {
-    descMainDetail.classList.remove(showDescDetail);
-    descMainDetail.classList.add(removeDescDetail);
 
-    descMoreDetail.classList.remove(removeDescDetail);
-    descMoreDetail.classList.add(showDescDetail);
+toggleMore.addEventListener("click", () => {
+    descMainDetail.style.display = "none";
+    descMoreDetail.style.display = "block";
+});
+
+// swiper slider
+var swiper1 = new Swiper(".swiper1", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true
+});
+
+var swiper2 = new Swiper(".swiper2", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    thumbs: {
+        swiper: swiper1
+    }
 });
