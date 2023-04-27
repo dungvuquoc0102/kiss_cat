@@ -158,6 +158,17 @@ button {
 /* header  */
 header {
     /* padding: 20px 0; */
+
+    background-color: #fff;
+}
+
+.stuck {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 1px 1px 10px #55555555;
 }
 
 .header-container {
@@ -185,11 +196,15 @@ header {
     /* padding: 10px 0; */
 }
 
-.header-menu > ul > li > a {
+.header-menu > ul > li a.header-cate {
     color: var(--primary-color);
     font-weight: 700;
     display: inline-block;
     padding: 35px 0;
+}
+
+.header-menu > ul > li span i.header-arr-down {
+    color: #555555;
 }
 
 /* .header-menu ul > li > a.header-key {

@@ -72,15 +72,19 @@ const toggleMore = document.querySelector(".description-more");
 const descMainDetail = document.querySelector(".description-main-detail");
 const descMoreDetail = document.querySelector(".description-more-detail");
 
-toggleMain.addEventListener("click", () => {
-    descMainDetail.style.display = "block";
-    descMoreDetail.style.display = "none";
-});
+if (toggleMain) {
+    toggleMain.addEventListener("click", () => {
+        descMainDetail.style.display = "block";
+        descMoreDetail.style.display = "none";
+    });
+}
 
-toggleMore.addEventListener("click", () => {
-    descMainDetail.style.display = "none";
-    descMoreDetail.style.display = "block";
-});
+if (toggleMore) {
+    toggleMore.addEventListener("click", () => {
+        descMainDetail.style.display = "none";
+        descMoreDetail.style.display = "block";
+    });
+}
 
 // swiper slider
 var swiper1 = new Swiper(".swiper1", {
@@ -100,5 +104,22 @@ var swiper2 = new Swiper(".swiper2", {
     },
     thumbs: {
         swiper: swiper1
+    }
+});
+
+window.onload = () => {
+    var scroll_y = this.scrollY;
+    if (scroll_y > 200) {
+        console.log("hello");
+        document.querySelector("header").classList.add("stuck");
+    }
+};
+
+window.addEventListener("scroll", () => {
+    var scroll_y = this.scrollY;
+    if (scroll_y > 200) {
+        document.querySelector("header").classList.add("stuck");
+    } else {
+        document.querySelector("header").classList.remove("stuck");
     }
 });
