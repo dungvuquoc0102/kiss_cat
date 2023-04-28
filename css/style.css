@@ -274,7 +274,7 @@ ul.header-sub-sub-menu > li > a {
 
 .header-search:hover > .header-search-form {
     visibility: visible;
-    display: inherit;
+    /* display: inherit; */
 }
 
 .header-search-form {
