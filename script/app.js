@@ -123,3 +123,29 @@ window.addEventListener("scroll", () => {
         document.querySelector("header").classList.remove("stuck");
     }
 });
+
+var button_show_menu = document.querySelector(".header-menu .button_show_menu_1");
+var header_sub_menu = document.querySelector(".header-menu .header-sub-menu_1");
+if (button_show_menu && header_sub_menu) {
+    button_show_menu.addEventListener("click", () => {
+        if (header_sub_menu.style.display == "inherit") {
+            header_sub_menu.style.display = "none";
+        } else {
+            header_sub_menu.style.display = "inherit";
+            header_sub_menu.style.visibility = "visible";
+        }
+    });
+}
+
+var button_show_menu_2 = document.querySelector(".header-menu .button_show_menu_2");
+var header_sub_menu_2 = document.querySelector(".header-menu .header-sub-menu_2");
+if (button_show_menu_2 && header_sub_menu_2) {
+    button_show_menu_2.addEventListener("click", () => {
+        if (header_sub_menu_2.style.display == "inherit") {
+            header_sub_menu_2.style.display = "none";
+        } else {
+            header_sub_menu_2.style.display = "inherit";
+            header_sub_menu_2.style.visibility = "visible";
+        }
+    });
+}
