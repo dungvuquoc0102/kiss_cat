@@ -150,7 +150,7 @@
 /* similarPro  */
 .similarPro-container {
     color: #000;
-    padding: 30px 0;
+    padding: 30px 15px;
 }
 
 .similarPro-heading {
@@ -171,6 +171,10 @@
     text-align: center;
 }
 
+.similarPro-list > .product-item img {
+    height: 188px;
+}
+
 .product-item > .category-product-detail > .category-product-name {
     padding: 10px 0;
 }
@@ -181,34 +185,6 @@
 
 .category-content-right > .product-item:hover > .category-product-detail {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (max-width: 767px) {
-    .product-container {
-        display: block;
-    }
-    .product-img {
-        width: 100%;
-        margin: 0 auto;
-    }
-    .product-detail {
-        width: 100%;
-    }
-    .product-img-main .slick-list .slick-slide img {
-        margin: 0 auto;
-    }
-    .product-detail .product-detail-button {
-        width: 150px;
-    }
-    .description-container {
-        grid-template-columns: 1fr;
-    }
-    .description-container .description-left {
-        border-right: none;
-    }
-    .similarPro-list {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
 
 /* swiper  */
@@ -243,10 +219,61 @@
     object-fit: cover;
 }
 
+.swiper2 .swiper-slide img {
+    height: 505px;
+}
+
+.swiper1 .swiper-slide img {
+    height: 119px;
+}
+
 .swiper1 .swiper-slide {
     opacity: 0.4;
 }
 
 .swiper1 .swiper-slide-thumb-active {
     opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+    .product-container {
+        display: block;
+    }
+    .product-img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .product-detail {
+        width: 100%;
+    }
+    .product-img-main .slick-list .slick-slide img {
+        margin: 0 auto;
+    }
+    .product-detail .product-detail-button {
+        width: 150px;
+    }
+    .description-container {
+        grid-template-columns: 1fr;
+    }
+    .description-container .description-left {
+        border-right: none;
+        padding: 15px;
+    }
+    .similarPro-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .similarPro-list > .product-item img {
+        height: 100px;
+        width: 100%;
+    }
+
+    /* swiper  */
+    .swiper2 .swiper-slide img {
+        height: 350px;
+    }
+
+    .swiper1 .swiper-slide img {
+        height: 80px;
+    }
 }

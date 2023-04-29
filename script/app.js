@@ -9,6 +9,8 @@ toggle.addEventListener("click", () => {
 window.addEventListener("click", (e) => {
     if (!menu.contains(e.target) && !e.target.matches(".fas.fa-bars.icon-menu")) {
         menu.classList.remove(activeClass);
+        header_sub_menu.style.display = "none";
+        header_sub_menu_2.style.display = "none";
     }
 });
 
@@ -110,7 +112,6 @@ var swiper2 = new Swiper(".swiper2", {
 window.onload = () => {
     var scroll_y = this.scrollY;
     if (scroll_y > 200) {
-        console.log("hello");
         document.querySelector("header").classList.add("stuck");
     }
 };
