@@ -134,6 +134,7 @@ if (button_show_menu && header_sub_menu) {
         } else {
             header_sub_menu.style.display = "inherit";
             header_sub_menu.style.visibility = "visible";
+            header_sub_menu_2.style.display = "none";
         }
     });
 }
@@ -147,6 +148,7 @@ if (button_show_menu_2 && header_sub_menu_2) {
         } else {
             header_sub_menu_2.style.display = "inherit";
             header_sub_menu_2.style.visibility = "visible";
+            header_sub_menu.style.display = "none";
         }
     });
 }
